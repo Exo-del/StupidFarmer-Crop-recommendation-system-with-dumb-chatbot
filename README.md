@@ -227,17 +227,6 @@ If your dataset uses different realistic ranges, you may need to modify the `ran
 
 ---
 
-# 🔮 Possible Improvements
-
-- [ ] Save/load input profiles
-- [ ] Export recommendation reports (PDF/CSV)
-- [ ] Add feature importance visualization
-- [ ] Support additional ML models (SVM, XGBoost, etc.)
-- [ ] Create a web version using Streamlit or Flask
-- [ ] GPS-based soil map integration
-
----
-
 # 🙏 Acknowledgements
 
 - **Dataset Author:** [Atharva Ingle](https://www.kaggle.com/atharvaingle)
