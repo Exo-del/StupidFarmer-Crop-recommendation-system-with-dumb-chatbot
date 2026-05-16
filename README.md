@@ -208,6 +208,31 @@ This notebook may include:
 - Correlation analysis
 - Feature statistics
 - Visualization experiments
+---
+---
+
+# 📸 Screenshots
+
+## Main Interface
+
+<p align="center">
+  <img src="screenshots/main-ui.png" width="900" alt="Main Application UI">
+</p>
+
+---
+
+## Prediction Result
+
+<img width="950" height="918" alt="image" src="https://github.com/user-attachments/assets/4b26514c-dd5e-441a-abca-cc0425104598" />
+
+
+
+---
+
+## Interactive AI Chat
+
+<img width="950" height="918" alt="image" src="https://github.com/user-attachments/assets/1adf1bda-e7dd-48c8-8550-81696074a661" />
+
 
 ---
 
