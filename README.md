@@ -1,61 +1,50 @@
 # 🌾 Crop Recommendation System
 
-A monorepo spanning 3 generations of crop recommendation tools:
-
-| Version | Description |
-|---------|-------------|
-| **v0.1** | `gui.py` — Original Tkinter + Random Forest classifier (7 features) |
-| **v1.0** | `main.py` — CustomTkinter + XGBoost + local LLM explanations |
-| **v2.5** | Continent-aware XGBoost with GAEZ + GROW-Africa fusion, 33 crops, multi-crop visualization |
+Three generations of crop recommendation tools in one monorepo.
 
 ---
 
-## ✨ Features (v2.5)
+## 📦 Versions
 
-- **🧠 AI Crop Prediction** — XGBoost classifier trained on 9 features (N, P, K, organic_carbon, temperature, humidity, ph, rainfall + continent_encoded)
-- **🌍 Continent-Aware** — Dropdown selects Africa, Asia, Global, North America, or South America
-- **📊 Multi-Crop Output** — Top-5 recommendations with confidence bars
-- **🤖 Local LLM Explanations** — GGUF model via llama.cpp for natural-language reasoning
-- **💬 Interactive Chat** — Ask follow-ups about crops, soil, farming tips
-- **🎨 Modern UI** — CustomTkinter dark theme
-- **⚡ Fallback Explanations** — Rule-based engine when LLM is unavailable
+| Version | Description | Stack | Directory |
+|---------|-------------|-------|-----------|
+| **v0.1** | Simple desktop app with Random Forest + Tkinter | `scikit-learn`, `Tkinter` | [`v0.1/`](./v0.1) |
+| **v1.0** | Modern UI with XGBoost + local LLM explanations | `XGBoost`, `CustomTkinter`, `llama.cpp` | [`v1.0/`](./v1.0) |
+| **v2.5** | Continent-aware prediction with GAEZ + GROW-Africa fusion | `XGBoost`, `GAEZ`, `WoSIS`, `Open-Meteo` | [`v2.5/`](./v2.5) |
 
----
+## 🏷️ Releases
+
+- [**v2.5**](https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases/tag/v2.5) — Latest: continent-aware, 33 crops, 9 features
+- [**v1.0**](https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases/tag/v1.0) — XGBoost + LLM chatbot
+- [**v0.1**](https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases/tag/v0.1) — Original Random Forest + Tkinter
 
 ## 🚀 Quick Start
 
 ```bash
+# Latest version
+cd v2.5
 python -m venv venv
 source venv/bin/activate
 python install.py
-python main.py        # v1.0/v2.5
-# or
-python gui.py         # v0.1 legacy
+python main.py
 ```
-
----
 
 ## 📁 Structure
 
 ```
-├── main.py                  # v2.5 continent-aware app
-├── gui.py                   # v0.1 legacy Tkinter app
-├── install.py               # Dependency installer
-├── crop_ranges.json         # Crop condition ranges
-├── xgboost_model.pkl        # Trained model
-├── continent_encoder.pkl    # Continent label encoder
-├── label_encoder.pkl        # Crop label encoder
-├── dataset/
-│   ├── gov_dataset.csv      # GAEZ-based dataset (28 crops)
-│   └── grow_dataset.csv     # GROW-Africa dataset (24 crops)
-├── LLM/
-│   └── *.gguf               # Local LLM models
-└── scripts/
-    ├── merge_and_train.py   # Unified training pipeline
-    └── train_model.py       # 8-feature trainer
+├── v0.1/          # Tkinter + Random Forest (7 features, 22 crops)
+│   ├── gui.py
+│   └── dataset/
+├── v1.0/          # CustomTkinter + XGBoost + LLM (7 features, 22 crops)
+│   ├── main.py
+│   └── dataset/
+├── v2.5/          # Continent-aware XGBoost (9 features, 33 crops)
+│   ├── main.py
+│   ├── scripts/   # Training pipelines
+│   └── dataset/
+├── LLM/           # Shared GGUF model directory
+└── README.md
 ```
-
----
 
 ## 📜 License
 

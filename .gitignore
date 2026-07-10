@@ -1,10 +1,3 @@
-# Large model files
-LLM/*.gguf
-*.gguf
-
-# Large datasets
-dataset/*.csv
-
 # Python cache
 __pycache__/
 *.pyc
@@ -13,17 +6,8 @@ __pycache__/
 venv/
 .env
 
-# Old yield models (superseded)
-africa_yield_model.pkl
-africa_yield_models.pkl
-
-# Generated data files
-crop_region_map.json
-soil_profiles.json
-val_ranges.json
-
-# Raw data
-dataset/raw/
+# Large LLM model files (root only)
+/LLM/
 
 # OS
 .DS_Store
