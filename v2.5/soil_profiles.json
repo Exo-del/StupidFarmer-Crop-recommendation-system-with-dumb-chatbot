@@ -1,5 +1,5 @@
 {
-  "South America": {
+  "South America (soil)": {
     "N_median": 0.85,
     "N_low": 0.2,
     "N_high": 3.5,
@@ -12,9 +12,12 @@
     "ph_median": 5.7,
     "ph_low": 4.6,
     "ph_high": 8.0,
+    "organic_carbon_median": 9.2,
+    "organic_carbon_low": 2.1,
+    "organic_carbon_high": 52.7,
     "samples": 884
   },
-  "Asia": {
+  "Asia (soil)": {
     "N_median": 0.8,
     "N_low": 0.2,
     "N_high": 2.9,
@@ -27,9 +30,12 @@
     "ph_median": 5.3,
     "ph_low": 4.4,
     "ph_high": 7.0,
+    "organic_carbon_median": 9.0,
+    "organic_carbon_low": 1.9,
+    "organic_carbon_high": 45.36,
     "samples": 1997
   },
-  "Africa": {
+  "Africa (soil)": {
     "N_median": 0.8,
     "N_low": 0.2,
     "N_high": 2.9,
@@ -42,9 +48,12 @@
     "ph_median": 6.0,
     "ph_low": 4.6,
     "ph_high": 8.1,
+    "organic_carbon_median": 8.2,
+    "organic_carbon_low": 2.0,
+    "organic_carbon_high": 36.1,
     "samples": 6727
   },
-  "North America": {
+  "North America (soil)": {
     "N_median": 0.7,
     "N_low": 0.2,
     "N_high": 3.1,
@@ -57,9 +66,12 @@
     "ph_median": 5.7,
     "ph_low": 4.5,
     "ph_high": 7.4,
+    "organic_carbon_median": 7.7,
+    "organic_carbon_low": 1.5,
+    "organic_carbon_high": 43.5,
     "samples": 6271
   },
-  "Global": {
+  "Global (soil)": {
     "N_median": 0.7,
     "N_low": 0.2,
     "N_high": 2.5,
@@ -72,9 +84,12 @@
     "ph_median": 5.7,
     "ph_low": 4.7,
     "ph_high": 7.1,
+    "organic_carbon_median": 7.1,
+    "organic_carbon_low": 2.0,
+    "organic_carbon_high": 28.7,
     "samples": 2873
   },
-  "Africa (Observed)": {
+  "Africa Observed (soil)": {
     "N_median": 0.89,
     "N_low": 0.32,
     "N_high": 2.14,
@@ -87,6 +102,9 @@
     "ph_median": 5.9,
     "ph_low": 5.08,
     "ph_high": 7.28,
+    "organic_carbon_median": 10.06,
+    "organic_carbon_low": 3.6,
+    "organic_carbon_high": 23.38,
     "samples": 4773
   },
   "Clay": {
@@ -102,6 +120,9 @@
     "ph_median": 6.25,
     "ph_low": 5.5,
     "ph_high": 7.0,
+    "organic_carbon_median": 30.0,
+    "organic_carbon_low": 10,
+    "organic_carbon_high": 50,
     "samples": 100
   },
   "Sandy Loam": {
@@ -117,6 +138,9 @@
     "ph_median": 5.75,
     "ph_low": 5.0,
     "ph_high": 6.5,
+    "organic_carbon_median": 12.5,
+    "organic_carbon_low": 5,
+    "organic_carbon_high": 20,
     "samples": 100
   },
   "Silt Loam": {
@@ -132,6 +156,9 @@
     "ph_median": 6.5,
     "ph_low": 5.5,
     "ph_high": 7.5,
+    "organic_carbon_median": 27.5,
+    "organic_carbon_low": 15,
+    "organic_carbon_high": 40,
     "samples": 100
   },
   "Loamy Sand": {
@@ -147,6 +174,9 @@
     "ph_median": 5.5,
     "ph_low": 5.0,
     "ph_high": 6.0,
+    "organic_carbon_median": 9.0,
+    "organic_carbon_low": 3,
+    "organic_carbon_high": 15,
     "samples": 100
   },
   "Sandy Clay": {
@@ -162,6 +192,9 @@
     "ph_median": 6.25,
     "ph_low": 5.5,
     "ph_high": 7.0,
+    "organic_carbon_median": 19.0,
+    "organic_carbon_low": 8,
+    "organic_carbon_high": 30,
     "samples": 100
   },
   "Organic Peat": {
@@ -177,6 +210,9 @@
     "ph_median": 4.75,
     "ph_low": 4.0,
     "ph_high": 5.5,
+    "organic_carbon_median": 400.0,
+    "organic_carbon_low": 200,
+    "organic_carbon_high": 600,
     "samples": 100
   },
   "Chalky": {
@@ -192,6 +228,9 @@
     "ph_median": 7.75,
     "ph_low": 7.0,
     "ph_high": 8.5,
+    "organic_carbon_median": 10.0,
+    "organic_carbon_low": 5,
+    "organic_carbon_high": 15,
     "samples": 100
   }
 }

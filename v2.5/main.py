@@ -160,24 +160,24 @@ FEATURES = ['N', 'P', 'K', 'organic_carbon', 'temperature', 'humidity', 'ph', 'r
 
 FIELD_LABELS = {
     "en": [
-        ("Nitrogen (N)", "N", "0 \u2013 120 kg/ha"),
-        ("Phosphorus (P)", "P", "5 \u2013 80 kg/ha"),
-        ("Potassium (K)", "K", "5 \u2013 85 kg/ha"),
-        ("Organic Carbon (g/kg)", "organic_carbon", "2 \u2013 50 g/kg"),
-        ("Temperature", "temperature", "10 \u2013 35 \u00b0C"),
-        ("Humidity", "humidity", "14 \u2013 95 %"),
-        ("pH Level", "ph", "5.0 \u2013 8.9"),
-        ("Rainfall", "rainfall", "20 \u2013 300 mm"),
+        ("Nitrogen (N)", "N", "0 \u2013 55 kg/ha"),
+        ("Phosphorus (P)", "P", "5 \u2013 25 kg/ha"),
+        ("Potassium (K)", "K", "5 \u2013 200 kg/ha"),
+        ("Organic Carbon (g/kg)", "organic_carbon", "0 \u2013 650 g/kg"),
+        ("Temperature", "temperature", "0 \u2013 40 \u00b0C"),
+        ("Humidity", "humidity", "5 \u2013 100 %"),
+        ("pH Level", "ph", "2.0 \u2013 11.0"),
+        ("Rainfall", "rainfall", "0 \u2013 16 mm/day"),
     ],
     "fr": [
-        ("Azote (N)", "N", "0 \u2013 120 kg/ha"),
-        ("Phosphore (P)", "P", "5 \u2013 80 kg/ha"),
-        ("Potassium (K)", "K", "5 \u2013 85 kg/ha"),
-        ("Carbone organique (g/kg)", "organic_carbon", "2 \u2013 50 g/kg"),
-        ("Temp\u00e9rature", "temperature", "10 \u2013 35 \u00b0C"),
-        ("Humidit\u00e9", "humidity", "14 \u2013 95 %"),
-        ("pH", "ph", "5.0 \u2013 8.9"),
-        ("Pr\u00e9cipitations", "rainfall", "20 \u2013 300 mm"),
+        ("Azote (N)", "N", "0 \u2013 55 kg/ha"),
+        ("Phosphore (P)", "P", "5 \u2013 25 kg/ha"),
+        ("Potassium (K)", "K", "5 \u2013 200 kg/ha"),
+        ("Carbone organique (g/kg)", "organic_carbon", "0 \u2013 650 g/kg"),
+        ("Temp\u00e9rature", "temperature", "0 \u2013 40 \u00b0C"),
+        ("Humidit\u00e9", "humidity", "5 \u2013 100 %"),
+        ("pH", "ph", "2.0 \u2013 11.0"),
+        ("Pr\u00e9cipitations", "rainfall", "0 \u2013 16 mm/jour"),
     ],
 }
 
@@ -1457,10 +1457,10 @@ class CropRecommendationApp:
 
     def predict(self):
         ranges = {
-            'N': (0, 70), 'P': (0, 25), 'K': (0, 3000),
+            'N': (0, 55), 'P': (5, 25), 'K': (2, 2800),
             'organic_carbon': (0, 650),
-            'temperature': (0, 45), 'humidity': (5, 100),
-            'ph': (2.0, 11.0), 'rainfall': (0, 5)
+            'temperature': (-5, 40), 'humidity': (5, 100),
+            'ph': (2.0, 11.0), 'rainfall': (0, 16)
         }
 
         input_values = []
@@ -1562,6 +1562,9 @@ class CropRecommendationApp:
         self.entries['K'].insert(0, str(profile['K_median']))
         self.entries['ph'].delete(0, "end")
         self.entries['ph'].insert(0, str(profile['ph_median']))
+        if 'organic_carbon_median' in profile:
+            self.entries['organic_carbon'].delete(0, "end")
+            self.entries['organic_carbon'].insert(0, str(profile['organic_carbon_median']))
 
     def clear_fields(self):
         for entry in self.entries.values():
