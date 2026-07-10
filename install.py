@@ -14,6 +14,9 @@ REQUIRED_PACKAGES = [
     "seaborn",
     "xgboost",
     "llama-cpp-python",
+    "customtkinter",
+    "requests",
+    "tqdm",
 ]
 
 STANDARD_LIBRARY_PACKAGES = [
