@@ -1,27 +1,18 @@
-# 🌾 Crop Recommendation System
+# Crop Recommendation System
 
-Three generations of crop recommendation tools in one monorepo.
+An AI-powered desktop application that analyzes soil nutrients, climate conditions, and geographic location to recommend the most suitable crops. Spans three generations of ML tooling.
 
----
+## Versions
 
-## 📦 Versions
+| Version | Stack | Features | Directory |
+|---------|-------|----------|-----------|
+| **v2.5** | XGBoost, CustomTkinter, GAEZ + GROW-Africa | 33 crops, continent-aware (5 continents), 9 features, top-5 confidence bars, LLM explanations, multi-language | [`v2.5/`](./v2.5) |
+| **v1.0** | XGBoost, CustomTkinter, llama.cpp | 22 crops, 7 features, LLM chat, fallback explanations | [`v1.0/`](./v1.0) |
+| **v0.1** | scikit-learn Random Forest, Tkinter | 22 crops, 7 features, basic GUI | [`v0.1/`](./v0.1) |
 
-| Version | Description | Stack | Directory |
-|---------|-------------|-------|-----------|
-| **v0.1** | Simple desktop app with Random Forest + Tkinter | `scikit-learn`, `Tkinter` | [`v0.1/`](./v0.1) |
-| **v1.0** | Modern UI with XGBoost + local LLM explanations | `XGBoost`, `CustomTkinter`, `llama.cpp` | [`v1.0/`](./v1.0) |
-| **v2.5** | Continent-aware prediction with GAEZ + GROW-Africa fusion | `XGBoost`, `GAEZ`, `WoSIS`, `Open-Meteo` | [`v2.5/`](./v2.5) |
-
-## 🏷️ Releases
-
-- [**v2.5**](https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases/tag/v2.5) — Latest: continent-aware, 33 crops, 9 features
-- [**v1.0**](https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases/tag/v1.0) — XGBoost + LLM chatbot
-- [**v0.1**](https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases/tag/v0.1) — Original Random Forest + Tkinter
-
-## 🚀 Quick Start
+## Quick Start (latest)
 
 ```bash
-# Latest version
 cd v2.5
 python -m venv venv
 source venv/bin/activate
@@ -29,23 +20,34 @@ python install.py
 python main.py
 ```
 
-## 📁 Structure
+## Releases
+
+| Release | Link |
+|---------|------|
+| v2.5 — Continent-Aware | https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases/tag/v2.5 |
+| v1.0 — XGBoost + LLM | https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases/tag/v1.0 |
+| v0.1 — Random Forest + Tkinter | https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases/tag/v0.1 |
+
+## Repository Structure
 
 ```
-├── v0.1/          # Tkinter + Random Forest (7 features, 22 crops)
-│   ├── gui.py
-│   └── dataset/
-├── v1.0/          # CustomTkinter + XGBoost + LLM (7 features, 22 crops)
-│   ├── main.py
-│   └── dataset/
-├── v2.5/          # Continent-aware XGBoost (9 features, 33 crops)
-│   ├── main.py
-│   ├── scripts/   # Training pipelines
-│   └── dataset/
-├── LLM/           # Shared GGUF model directory
-└── README.md
+.
+├── v0.1/          Tkinter + Random Forest
+│   ├── gui.py     Standalone desktop app
+│   └── dataset/   Crop_recommendation.csv
+├── v1.0/          CustomTkinter + XGBoost + LLM
+│   ├── main.py    Main application
+│   ├── install.py Dependency installer
+│   └── dataset/   Training data
+├── v2.5/          Continent-aware XGBoost (active version)
+│   ├── main.py    Main application with continent dropdown
+│   ├── scripts/   Training pipelines
+│   ├── assets/    Screenshots
+│   └── dataset/   GAEZ + GROW-Africa data
+├── LLM/           Shared GGUF model directory (gitignored)
+└── README.md      This file
 ```
 
-## 📜 License
+## License
 
 MIT License
