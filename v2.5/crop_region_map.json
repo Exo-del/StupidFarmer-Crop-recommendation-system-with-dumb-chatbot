@@ -1,126 +1,277 @@
 {
-  "cowpea": [
-    "africa",
-    "global"
-  ],
-  "beans": [
-    "africa",
-    "global"
-  ],
-  "chickpea": [
-    "global"
-  ],
-  "pigeonpea": [
-    "global"
-  ],
-  "wheat": [
-    "africa",
-    "global"
-  ],
-  "cotton": [
-    "africa",
-    "global"
-  ],
-  "millet": [
-    "africa",
-    "global"
-  ],
-  "maize": [
-    "africa",
-    "global"
-  ],
-  "groundnut": [
-    "africa",
-    "global"
-  ],
-  "tobacco": [
-    "africa",
-    "global"
-  ],
-  "soybean": [
-    "africa",
-    "global"
-  ],
-  "yam": [
-    "africa",
-    "global"
-  ],
-  "orange": [
-    "global"
-  ],
-  "oil_palm": [
-    "global"
+  "banana": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "South America",
+    "Southern Africa",
+    "West Africa"
   ],
   "barley": [
-    "africa",
-    "global"
+    "Africa",
+    "East Africa",
+    "North America",
+    "South America"
   ],
-  "sunflower": [
-    "global"
-  ],
-  "onion": [
-    "global"
-  ],
-  "sweet_potato": [
-    "global"
-  ],
-  "tomatoes": [
-    "global"
-  ],
-  "cassava": [
-    "africa",
-    "global"
-  ],
-  "coffee": [
-    "africa",
-    "global"
-  ],
-  "rice": [
-    "africa",
-    "global"
-  ],
-  "tea": [
-    "global"
-  ],
-  "sugarcane": [
-    "global"
+  "beans": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North America",
+    "South America",
+    "Southern Africa",
+    "West Africa"
   ],
   "cabbage": [
-    "global"
+    "Africa",
+    "Asia",
+    "Global",
+    "North America",
+    "South America"
   ],
-  "sorghum": [
-    "africa",
-    "global"
+  "cassava": [
+    "Africa",
+    "Asia",
+    "Central Africa",
+    "East Africa",
+    "Global",
+    "North America",
+    "South America",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "chickpea": [
+    "Africa",
+    "North America",
+    "South America"
   ],
   "cocoa": [
-    "global"
+    "Asia"
   ],
-  "banana": [
-    "africa",
-    "global"
+  "coffee": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North America",
+    "South America",
+    "West Africa"
   ],
-  "potato": [
-    "africa"
+  "cotton": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North America",
+    "South America",
+    "Southern Africa",
+    "West Africa"
   ],
-  "sugar cane": [
-    "africa"
+  "cowpea": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North Africa",
+    "North America",
+    "South America",
+    "Southern Africa",
+    "West Africa"
   ],
-  "sesame": [
-    "africa"
+  "groundnut": [
+    "Africa",
+    "East Africa",
+    "Global",
+    "North America",
+    "Southern Africa",
+    "West Africa"
   ],
-  "sweet potato": [
-    "africa"
+  "maize": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North Africa",
+    "North America",
+    "South America",
+    "Southern Africa",
+    "West Africa"
   ],
-  "taro": [
-    "africa"
+  "millet": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North America",
+    "Southern Africa",
+    "West Africa"
   ],
-  "pigeon pea": [
-    "africa"
+  "oil_palm": [
+    "Africa",
+    "Asia"
   ],
-  "teff": [
-    "africa"
+  "onion": [
+    "Africa",
+    "Asia",
+    "Global",
+    "North America",
+    "South America"
+  ],
+  "orange": [
+    "Africa",
+    "Asia",
+    "Global",
+    "North America",
+    "South America"
+  ],
+  "pigeonpea": [
+    "Africa",
+    "Asia",
+    "Global",
+    "North America",
+    "South America"
+  ],
+  "rice": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North Africa",
+    "North America",
+    "South America",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "sorghum": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North Africa",
+    "North America",
+    "South America",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "soybean": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North America",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "sugarcane": [
+    "Africa",
+    "Asia",
+    "Global",
+    "North America",
+    "South America"
+  ],
+  "sunflower": [
+    "Africa",
+    "Asia",
+    "Global",
+    "North America"
+  ],
+  "sweet_potato": [
+    "Asia",
+    "Global",
+    "North America",
+    "South America"
+  ],
+  "tea": [
+    "Africa",
+    "Asia",
+    "Global",
+    "North America",
+    "South America"
+  ],
+  "tobacco": [
+    "Africa",
+    "East Africa",
+    "Global",
+    "North America",
+    "South America",
+    "Southern Africa"
+  ],
+  "tomatoes": [
+    "Africa",
+    "Asia",
+    "Global",
+    "North America",
+    "South America"
+  ],
+  "wheat": [
+    "Africa",
+    "Asia",
+    "East Africa",
+    "Global",
+    "North America",
+    "South America",
+    "Southern Africa"
+  ],
+  "yam": [
+    "Africa",
+    "Asia",
+    "Central Africa",
+    "East Africa",
+    "Global",
+    "North America",
+    "South America",
+    "Southern Africa",
+    "West Africa"
   ],
   "okra": [
-    "africa"
+    "Africa",
+    "Central Africa",
+    "East Africa",
+    "North Africa",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "pigeon pea": [
+    "Africa",
+    "East Africa",
+    "Southern Africa"
+  ],
+  "potato": [
+    "Africa",
+    "East Africa",
+    "North Africa",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "sesame": [
+    "Africa",
+    "East Africa",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "sugar cane": [
+    "Africa",
+    "East Africa",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "sweet potato": [
+    "Africa",
+    "East Africa",
+    "North Africa",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "taro": [
+    "Africa",
+    "Central Africa",
+    "East Africa",
+    "Southern Africa",
+    "West Africa"
+  ],
+  "teff": [
+    "Africa",
+    "East Africa"
   ]
 }
