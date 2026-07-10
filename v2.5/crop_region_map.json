@@ -1,0 +1,126 @@
+{
+  "cowpea": [
+    "africa",
+    "global"
+  ],
+  "beans": [
+    "africa",
+    "global"
+  ],
+  "chickpea": [
+    "global"
+  ],
+  "pigeonpea": [
+    "global"
+  ],
+  "wheat": [
+    "africa",
+    "global"
+  ],
+  "cotton": [
+    "africa",
+    "global"
+  ],
+  "millet": [
+    "africa",
+    "global"
+  ],
+  "maize": [
+    "africa",
+    "global"
+  ],
+  "groundnut": [
+    "africa",
+    "global"
+  ],
+  "tobacco": [
+    "africa",
+    "global"
+  ],
+  "soybean": [
+    "africa",
+    "global"
+  ],
+  "yam": [
+    "africa",
+    "global"
+  ],
+  "orange": [
+    "global"
+  ],
+  "oil_palm": [
+    "global"
+  ],
+  "barley": [
+    "africa",
+    "global"
+  ],
+  "sunflower": [
+    "global"
+  ],
+  "onion": [
+    "global"
+  ],
+  "sweet_potato": [
+    "global"
+  ],
+  "tomatoes": [
+    "global"
+  ],
+  "cassava": [
+    "africa",
+    "global"
+  ],
+  "coffee": [
+    "africa",
+    "global"
+  ],
+  "rice": [
+    "africa",
+    "global"
+  ],
+  "tea": [
+    "global"
+  ],
+  "sugarcane": [
+    "global"
+  ],
+  "cabbage": [
+    "global"
+  ],
+  "sorghum": [
+    "africa",
+    "global"
+  ],
+  "cocoa": [
+    "global"
+  ],
+  "banana": [
+    "africa",
+    "global"
+  ],
+  "potato": [
+    "africa"
+  ],
+  "sugar cane": [
+    "africa"
+  ],
+  "sesame": [
+    "africa"
+  ],
+  "sweet potato": [
+    "africa"
+  ],
+  "taro": [
+    "africa"
+  ],
+  "pigeon pea": [
+    "africa"
+  ],
+  "teff": [
+    "africa"
+  ],
+  "okra": [
+    "africa"
+  ]
+}

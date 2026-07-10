@@ -18,8 +18,6 @@ africa_yield_model.pkl
 africa_yield_models.pkl
 
 # Generated data files
-crop_region_map.json
-soil_profiles.json
 val_ranges.json
 
 # Raw data
