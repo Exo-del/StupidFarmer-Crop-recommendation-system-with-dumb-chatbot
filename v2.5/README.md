@@ -2,11 +2,9 @@
 
 > The latest generation: fuses global GAEZ suitability data with real African yield observations into a unified continent-aware XGBoost classifier.
 
-## Screenshots
+## Screenshot
 
-| Main Interface | Prediction Result |
-|---------------|-------------------|
-| ![Main UI](assets/screenshot_main.png) | ![Prediction](assets/screenshot_prediction.png) |
+![Main UI](assets/screenshot_main.png)
 
 ## Features
 
@@ -121,8 +119,7 @@ v2.5/
 ├── africa_crops.json         Africa-specific crop config
 ├── model_crops.json          All crop labels
 ├── assets/
-│   ├── screenshot_main.png
-│   └── screenshot_prediction.png
+│   └── screenshot_main.png
 ├── dataset/
 │   ├── gov_dataset.csv       GAEZ-based dataset (28 crops)
 │   └── grow_dataset.csv      GROW-Africa dataset (24 crops)
