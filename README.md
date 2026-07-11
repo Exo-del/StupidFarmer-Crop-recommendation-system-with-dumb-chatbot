@@ -93,3 +93,10 @@ MIT — see [LICENSE](LICENSE)
 ```
 
 **Data:** FAO/IFA FUBC surveys (Dryad: `10.5061/dryad.2rbnzs7qh`) + WorldClim 2.1
+
+---
+
+## 🔗 Links
+
+- **Releases:** https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases
+- **Issues:** https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/issues

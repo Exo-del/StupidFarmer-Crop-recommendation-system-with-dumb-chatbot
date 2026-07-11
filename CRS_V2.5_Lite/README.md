@@ -262,7 +262,10 @@ If you use this in research, please cite:
 
 ---
 
-## ⚠️ Limitations
+## 🔗 Links
+
+- **Releases:** https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases
+- **Issues:** https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/issues
 
 1. **Fertilizer ≠ Soil**: FUBC rates are *applied* fertilizer, not native soil NPK. We use them as proxies for crop nutrient demand.
 2. **pH from literature**: Soil pH not in FUBC; sourced from crop-specific FAO/USDA guides.
