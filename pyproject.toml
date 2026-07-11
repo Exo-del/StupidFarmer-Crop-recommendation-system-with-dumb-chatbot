@@ -38,9 +38,9 @@ llm = ["llama-cpp-python>=0.2.0"]
 dev = ["pytest>=7.0"]
 
 [project.urls]
-Homepage = "https://github.com/Exo-del/SeedBrain"
-Issues = "https://github.com/Exo-del/SeedBrain/issues"
-Releases = "https://github.com/Exo-del/SeedBrain/releases"
+Homepage = "https://github.com/Exo-del/SeedBrain-CRS"
+Issues = "https://github.com/Exo-del/SeedBrain-CRS/issues"
+Releases = "https://github.com/Exo-del/SeedBrain-CRS/releases"
 
 [tool.setuptools.packages.find]
 include = ["CRS_V2.5_Lite*"]

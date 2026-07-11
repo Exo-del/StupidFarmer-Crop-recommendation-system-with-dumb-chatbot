@@ -253,7 +253,7 @@ If you use this in research, please cite:
   author = {Alouhmy, Mohamed},
   affiliation = {Faculté des Sciences Ain Chock (FSAC), Université Hassan II de Casablanca},
   year = 2026,
-  url = {https://github.com/Exo-del/SeedBrain/tree/main/CRS_V2.5_Lite}
+  url = {https://github.com/Exo-del/SeedBrain-CRS/tree/main/CRS_V2.5_Lite}
 }
 ```
 
@@ -265,8 +265,8 @@ If you use this in research, please cite:
 
 ## Links
 
-- **Releases:** https://github.com/Exo-del/SeedBrain/releases
-- **Issues:** https://github.com/Exo-del/SeedBrain/issues
+- **Releases:** https://github.com/Exo-del/SeedBrain-CRS/releases
+- **Issues:** https://github.com/Exo-del/SeedBrain-CRS/issues
 
 ---
 
