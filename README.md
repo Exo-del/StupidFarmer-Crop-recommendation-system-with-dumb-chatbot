@@ -13,6 +13,8 @@ A progression from synthetic toy data → real-world reliable crop recommendatio
 
 > **Key finding:** Synthetic datasets (ICFA, GAEZ) have narrow non-overlapping ranges per crop → model memorizes boundaries, fails on real inputs. Real fertilizer survey data (FUBC) has overlapping ranges → model learns patterns, generalizes.
 
+![CRS_V2.5_Lite GUI](CRS_V2.5_Lite/assets/screenshot.png)
+
 ## 🚀 Quick Start (Recommended)
 
 ```bash

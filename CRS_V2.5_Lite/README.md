@@ -1,5 +1,7 @@
 # CRS_V2.5_Lite — Real-Data Crop Recommendation System
 
+![CRS_V2.5_Lite GUI](assets/screenshot.png)
+
 > **Production-ready crop recommendation with real-world reliability.**
 >
 > Trained on **actual fertilizer application rates** from 85 countries (FAO/IFA FUBC, 1978–2019) and **WorldClim climate normals** — not synthetic narrow ranges.
