@@ -1,4 +1,4 @@
-# Crop Recommendation System — Multi-Version Monorepo
+# Crop Recommendation System
 
 A progression from synthetic toy data → real-world reliable crop recommendation.
 
