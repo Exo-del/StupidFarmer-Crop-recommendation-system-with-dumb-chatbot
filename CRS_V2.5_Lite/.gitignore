@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Model artifacts (large)
+*.pkl
+*.joblib
+
+# Local config
+.env
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# LLM models
+LLM/*.gguf
+LLM/*.bin
+
+# Build
+dist/
+build/
+*.egg-info/
