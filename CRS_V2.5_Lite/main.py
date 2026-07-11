@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import sys
 import threading
 import requests
@@ -101,7 +102,7 @@ y = le.fit_transform(df["label"])
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 model = XGBClassifier(n_estimators=500, max_depth=6, learning_rate=0.1, subsample=0.8,
     colsample_bytree=0.8, min_child_weight=3, gamma=0.1, reg_lambda=1.0, reg_alpha=0.5,
-    random_state=42, eval_metric="mlogloss", use_label_encoder=False, verbosity=0)
+    random_state=42, eval_metric="mlogloss", verbosity=0)
 model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False)
 joblib.dump(model, BASE / "xgboost_model.pkl")
 joblib.dump(le, BASE / "label_encoder.pkl")
@@ -302,7 +303,7 @@ class CropApp:
         self.prediction_ctx = None
         self.chat_history = []
 
-        self.root.title("🌾 CRS V2.5 Lite")
+        self.root.title("🌱 SeedBrain")
         self.root.geometry("950x850")
         self.root.minsize(850, 750)
         self.root.grid_columnconfigure(0, weight=1)
@@ -323,7 +324,7 @@ class CropApp:
         hero.grid(row=0, column=0, columnspan=2, sticky="ew", pady=(0, 18))
         hero.grid_columnconfigure(0, weight=1)
 
-        ctk.CTkLabel(hero, text="🌱 Crop Recommendation System",
+        ctk.CTkLabel(hero, text="🌱 SeedBrain — Crop Recommendation",
             font=ctk.CTkFont(family="Segoe UI", size=28, weight="bold"),
             text_color=("#d7ffd9", "#d7ffd9")).grid(row=0, column=0, sticky="w", padx=24, pady=(20, 6))
 
@@ -803,7 +804,7 @@ class CropApp:
 
 # ============ MAIN ============
 def main():
-    print("🌾 Initializing CRS V2.5 Lite...")
+    print("🌱 Initializing SeedBrain...")
     model, le, acc = load_model()
     if model is None:
         print("Failed to load model.")

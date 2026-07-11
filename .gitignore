@@ -1,14 +1,33 @@
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
 
 # Environment
 venv/
 .env
+.env.local
 
-# Large LLM model files (root only)
+# Large LLM model files
 /LLM/
+CRS_V2.5_Lite/LLM/*.gguf
+CRS_V2.5_Lite/LLM/*.bin
+
+# Generated model artifacts (reproducible via training)
+*.pkl
+*.joblib
 
 # OS
 .DS_Store
 Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+dist/
+build/
+*.egg-info/

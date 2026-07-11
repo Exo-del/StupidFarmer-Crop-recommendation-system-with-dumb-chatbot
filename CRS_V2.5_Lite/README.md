@@ -1,6 +1,6 @@
-# CRS_V2.5_Lite — Real-Data Crop Recommendation System
+# SeedBrain — CRS_V2.5_Lite
 
-![CRS_V2.5_Lite GUI](assets/screenshot.png)
+![SeedBrain GUI](assets/screenshot.png)
 
 > **Production-ready crop recommendation with real-world reliability.**
 >
@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 Why This Exists
+## Why This Exists
 
 | Model Type | Data Source | Exact Match | Top-3 |
 |------------|-------------|-------------|-------|
@@ -21,7 +21,7 @@
 
 ---
 
-## 📊 Results
+## Results
 
 | Metric | Value |
 |--------|-------|
@@ -38,7 +38,7 @@
 
 ---
 
-## 🗂️ Data Pipeline
+## Data Pipeline
 
 ```
 ┌─────────────────────┐     ┌──────────────────────┐     ┌────────────────────┐
@@ -67,7 +67,7 @@
 
 ---
 
-## 🧠 Model
+## Model
 
 ```python
 XGBClassifier(
@@ -98,7 +98,7 @@ XGBClassifier(
 
 ---
 
-## 🖥️ GUI Features
+## GUI Features
 
 | Feature | Description |
 |---------|-------------|
@@ -112,7 +112,7 @@ XGBClassifier(
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 cd CRS_V2.5_Lite
@@ -136,26 +136,26 @@ python main.py
 
 ---
 
-## 📦 Installation Details
+## Installation Details
 
 ```text
 requirements.txt
 ────────────────
-customtkinter≥5.2.0
-xgboost≥2.0.0
-scikit-learn≥1.3.0
-pandas≥2.0.0
-numpy≥1.24.0
-joblib≥1.3.0
-requests≥2.31.0
-llama-cpp-python≥0.2.0  # optional, for LLM
+customtkinter>=5.2.0
+xgboost>=2.0.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+joblib>=1.3.0
+requests>=2.31.0
+llama-cpp-python>=0.2.0  # optional, for LLM
 ```
 
 **System deps:** None (pure Python wheels). `llama-cpp-python` may need CMake on Linux.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 CRS_V2.5_Lite/
@@ -174,7 +174,7 @@ CRS_V2.5_Lite/
 
 ---
 
-## 🔬 Reproducibility
+## Reproducibility
 
 ### Retrain from scratch
 
@@ -198,7 +198,7 @@ y = le.fit_transform(df['label'])
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 model = XGBClassifier(n_estimators=500, max_depth=6, learning_rate=0.1, subsample=0.8,
     colsample_bytree=0.8, min_child_weight=3, gamma=0.1, reg_lambda=1.0, reg_alpha=0.5,
-    random_state=42, eval_metric='mlogloss', use_label_encoder=False, verbosity=0)
+    random_state=42, eval_metric='mlogloss', verbosity=0)
 model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False)
 joblib.dump(model, BASE / 'xgboost_model.pkl')
 joblib.dump(le, BASE / 'label_encoder.pkl')
@@ -214,7 +214,6 @@ python -c "
 import pandas as pd, numpy as np, joblib
 model = joblib.load('xgboost_model.pkl')
 le = joblib.load('label_encoder.pkl')
-# Test cases from standard agronomy references
 tests = {
     'maize': [80, 40, 30, 25, 65, 6.2, 90],
     'rice': [100, 50, 40, 27, 85, 6.0, 200],
@@ -229,7 +228,7 @@ print(f'Exact match: {correct}/{len(tests)} = {correct/len(tests)*100:.1f}%')
 
 ---
 
-## 📈 Version Comparison
+## Version Comparison
 
 | Aspect | v0.1 | v1.0 | v2.5 | **CRS_V2.5_Lite** |
 |--------|------|------|------|-------------------|
@@ -244,17 +243,17 @@ print(f'Exact match: {correct}/{len(tests)} = {correct/len(tests)*100:.1f}%')
 
 ---
 
-## 📝 Citation
+## Citation
 
 If you use this in research, please cite:
 
 ```bibtex
-@software{crs_v25_lite,
-  title = {CRS_V2.5_Lite: Real-Data Crop Recommendation System},
+@software{seedbrain,
+  title = {SeedBrain: Real-Data Crop Recommendation System},
   author = {Alouhmy, Mohamed},
   affiliation = {Faculté des Sciences Ain Chock (FSAC), Université Hassan II de Casablanca},
-  year = {2026},
-  url = {https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/tree/main/CRS_V2.5_Lite}
+  year = 2026,
+  url = {https://github.com/Exo-del/SeedBrain/tree/main/CRS_V2.5_Lite}
 }
 ```
 
@@ -264,10 +263,14 @@ If you use this in research, please cite:
 
 ---
 
-## 🔗 Links
+## Links
 
-- **Releases:** https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases
-- **Issues:** https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/issues
+- **Releases:** https://github.com/Exo-del/SeedBrain/releases
+- **Issues:** https://github.com/Exo-del/SeedBrain/issues
+
+---
+
+## Caveats
 
 1. **Fertilizer ≠ Soil**: FUBC rates are *applied* fertilizer, not native soil NPK. We use them as proxies for crop nutrient demand.
 2. **pH from literature**: Soil pH not in FUBC; sourced from crop-specific FAO/USDA guides.
@@ -277,7 +280,7 @@ If you use this in research, please cite:
 
 ---
 
-## 🛣️ Roadmap
+## Roadmap
 
 - [ ] Sub-national FUBC data (where available)
 - [ ] SoilGrids 2.0 integration for native soil properties
@@ -288,13 +291,13 @@ If you use this in research, please cite:
 
 ---
 
-## 📜 License
+## License
 
 MIT License — see [LICENSE](../LICENSE).
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Issues and PRs welcome. Priority areas:
 - New crop additions with literature-backed NPK/climate ranges
@@ -304,4 +307,4 @@ Issues and PRs welcome. Priority areas:
 
 ---
 
-**Built with real data, for real farmers.** 🌾
+**Built with real data, for real farmers.** 🌱🧠

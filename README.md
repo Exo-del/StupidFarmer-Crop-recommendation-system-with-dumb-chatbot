@@ -1,8 +1,15 @@
-# Crop Recommendation System
+# SeedBrain
+
+> AI-powered crop recommendation with real-world accuracy. Built with actual FAO fertilizer data, not synthetic toy sets.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 A progression from synthetic toy data → real-world reliable crop recommendation.
 
-## 📦 Versions
+---
+
+## Versions
 
 | Version | Folder | Data Source | Crops | Real-World Accuracy | Status |
 |---------|--------|-------------|-------|---------------------|--------|
@@ -13,9 +20,11 @@ A progression from synthetic toy data → real-world reliable crop recommendatio
 
 > **Key finding:** Synthetic datasets (ICFA, GAEZ) have narrow non-overlapping ranges per crop → model memorizes boundaries, fails on real inputs. Real fertilizer survey data (FUBC) has overlapping ranges → model learns patterns, generalizes.
 
-![CRS_V2.5_Lite GUI](CRS_V2.5_Lite/assets/screenshot.png)
+![SeedBrain GUI](CRS_V2.5_Lite/assets/screenshot.png)
 
-## 🚀 Quick Start (Recommended)
+---
+
+## Quick Start
 
 ```bash
 cd CRS_V2.5_Lite
@@ -27,7 +36,9 @@ python main.py
 
 **First run** auto-trains the model (~30s).
 
-## 📊 Real-World Performance
+---
+
+## Real-World Performance
 
 | Metric | Synthetic (v2.5) | Real (CRS_V2.5_Lite) |
 |--------|------------------|----------------------|
@@ -36,7 +47,9 @@ python main.py
 | CV accuracy (29 classes) | 56% | 70% |
 | Features | 9 | 7 |
 
-## 🔬 Data Pipeline
+---
+
+## Data Pipeline
 
 ```
 FUBC (FAO/IFA) Fertilizer Use By Crop 1978–2019
@@ -50,7 +63,9 @@ FUBC (FAO/IFA) Fertilizer Use By Crop 1978–2019
     └─► 2,900 samples × 29 crops × 7 features (balanced 100 each)
 ```
 
-## 📁 Repository Structure
+---
+
+## Repository Structure
 
 ```
 .
@@ -66,32 +81,40 @@ FUBC (FAO/IFA) Fertilizer Use By Crop 1978–2019
 └── LICENSE
 ```
 
-## 📚 Documentation
+---
+
+## Documentation
 
 - **CRS_V2.5_Lite/README.md** — Full academic documentation, reproducibility, citations
 - **v1.0/README.md** — Legacy GUI documentation
 - **v2.5/scripts/prepare_data.py** — Synthetic data pipeline (for reference)
 
-## 🏷️ Releases
+---
+
+## Releases
 
 - `v0.1-initial` — First commit
 - `v1.0-gui-llm` — CustomTkinter + LLM explanations
 - `v2.5-full-features` — Weather, soil profiles, continent encoder
 - **`v2.5-lite-real-data`** — **Real FUBC data, 83% real-world accuracy** ← Latest
 
-## 📜 License
+---
+
+## License
 
 MIT — see [LICENSE](LICENSE)
 
-## 📖 Citation
+---
+
+## Citation
 
 ```bibtex
-@software{crs_v25_lite,
-  title = {CRS_V2.5_Lite: Real-Data Crop Recommendation System},
+@software{seedbrain,
+  title = {SeedBrain: Real-Data Crop Recommendation System},
   author = {Alouhmy, Mohamed},
   affiliation = {Faculté des Sciences Ain Chock (FSAC), Université Hassan II de Casablanca},
   year = {2026},
-  url = {https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/tree/main/CRS_V2.5_Lite}
+  url = {https://github.com/Exo-del/SeedBrain}
 }
 ```
 
@@ -99,7 +122,11 @@ MIT — see [LICENSE](LICENSE)
 
 ---
 
-## 🔗 Links
+## Links
 
-- **Releases:** https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/releases
-- **Issues:** https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/issues
+- **Releases:** https://github.com/Exo-del/SeedBrain/releases
+- **Issues:** https://github.com/Exo-del/SeedBrain/issues
+
+---
+
+**Built with real data, for real farmers.** 🌱🧠
