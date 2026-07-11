@@ -87,6 +87,7 @@ MIT — see [LICENSE](LICENSE)
 @software{crs_v25_lite,
   title = {CRS_V2.5_Lite: Real-Data Crop Recommendation System},
   author = {Alouhmy, Mohamed},
+  affiliation = {Faculté des Sciences Ain Chock (FSAC), Université Hassan II de Casablanca},
   year = {2026},
   url = {https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/tree/main/CRS_V2.5_Lite}
 }

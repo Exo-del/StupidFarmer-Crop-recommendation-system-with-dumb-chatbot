@@ -249,10 +249,10 @@ If you use this in research, please cite:
 ```bibtex
 @software{crs_v25_lite,
   title = {CRS_V2.5_Lite: Real-Data Crop Recommendation System},
-  author = {Mohamed Alouhmy},
+  author = {Alouhmy, Mohamed},
+  affiliation = {Faculté des Sciences Ain Chock (FSAC), Université Hassan II de Casablanca},
   year = {2026},
-  url = {https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/tree/main/CRS_V2.5_Lite},
-  note = {Trained on FUBC/FAO fertilizer use by crop (1978--2019) + WorldClim 2.1}
+  url = {https://github.com/Exo-del/StupidFarmer-Crop-recommendation-system-with-dumb-chatbot/tree/main/CRS_V2.5_Lite}
 }
 ```
 
