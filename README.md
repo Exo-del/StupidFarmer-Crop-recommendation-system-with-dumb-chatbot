@@ -4,6 +4,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Release](https://img.shields.io/github/v/release/Exo-del/SeedBrain-CRS?filter=CRS_V2.5_Lite-*&label=latest)](https://github.com/Exo-del/SeedBrain-CRS/releases)
+[![Docker](https://img.shields.io/badge/docker-ready-2496ed.svg?logo=docker)](Dockerfile)
 
 A progression from synthetic toy data → real-world reliable crop recommendation.
 
@@ -26,6 +28,21 @@ A progression from synthetic toy data → real-world reliable crop recommendatio
 
 ## Quick Start
 
+### Option 1: Download release (recommended — no clone, pre-trained model)
+
+Grab the latest release archive from the [Releases page](https://github.com/Exo-del/SeedBrain-CRS/releases):
+
+```bash
+tar xzf seedbrain.tar.gz
+cd CRS_V2.5_Lite
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.lock
+python main.py
+```
+
+### Option 2: From source
+
 ```bash
 cd CRS_V2.5_Lite
 python -m venv venv
@@ -35,6 +52,14 @@ python main.py
 ```
 
 **First run** auto-trains the model (~30s).
+
+### Option 3: Docker
+
+```bash
+docker build -t seedbrain .
+# Run with X11 forwarding (Linux):
+docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix seedbrain
+```
 
 ---
 
@@ -69,12 +94,17 @@ FUBC (FAO/IFA) Fertilizer Use By Crop 1978–2019
 
 ```
 .
+├── .github/workflows/       # CI: automated release builder
 ├── CRS_V2.5_Lite/           # ← USE THIS (production)
 │   ├── main.py              # Clean GUI (~350 lines)
-│   ├── xgboost_model.pkl    # Real-data model
+│   ├── xgboost_model.pkl    # Real-data model (auto-trained)
 │   ├── crop_ranges.json     # 29 crops with real ranges
 │   ├── dataset/             # 2,900-row CSV
-│   └── requirements.txt
+│   ├── requirements.txt     # Loose deps
+│   ├── requirements.lock    # Pinned deps (reproducible)
+│   └── README.md            # Full academic docs
+├── Dockerfile               # Containerized reproducible run
+├── release.sh               # Manual release builder script
 ├── v1.0/                    # Legacy (synthetic India data)
 ├── v2.5/                    # Legacy (synthetic GAEZ data)
 ├── v0.1/                    # Legacy (original)
@@ -93,10 +123,26 @@ FUBC (FAO/IFA) Fertilizer Use By Crop 1978–2019
 
 ## Releases
 
-- `v0.1-initial` — First commit
-- `v1.0-gui-llm` — CustomTkinter + LLM explanations
-- `v2.5-full-features` — Weather, soil profiles, continent encoder
-- **`v2.5-lite-real-data`** — **Real FUBC data, 83% real-world accuracy** ← Latest
+Each release ships **pre-built model artifacts** + **pinned dependencies** — no clone, no training.
+
+| Tag | Description | Assets |
+|-----|-------------|--------|
+| `v0.1-initial` | First commit | Source only |
+| `v1.0-gui-llm` | CustomTkinter + LLM explanations | Source only |
+| `v2.5-full-features` | Weather, soil profiles, continent encoder | Source only |
+| `CRS_V2.5_Lite-*` | **Real FUBC data, 83% accuracy** | `seedbrain.tar.gz`, `seedbrain.zip`, `checksums.txt` |
+
+New releases are **automated** — push a tag matching `v*` or `CRS_V2.5_Lite-*`:
+```bash
+# Manual release script (run from repo root):
+./release.sh CRS_V2.5_Lite-20260713
+
+# Or push a tag (triggers GitHub Actions):
+git tag CRS_V2.5_Lite-20260713
+git push origin CRS_V2.5_Lite-20260713
+```
+
+Release artifacts include: `main.py`, pre-trained `xgboost_model.pkl`, `label_encoder.pkl`, `crop_ranges.json`, `dataset/`, `requirements.lock` (pinned deps), and checksums.
 
 ---
 
